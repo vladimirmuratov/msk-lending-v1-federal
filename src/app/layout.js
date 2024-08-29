@@ -4,7 +4,7 @@ import {Montserrat} from 'next/font/google'
 import {Box} from '@mui/material'
 import {Footer} from '@/components/Footer'
 import {Navigation} from '@/components/navigation/Navigation'
-import {Metrika} from '@/components/Metrika'
+// import {Metrika} from '@/components/Metrika'
 import {Suspense} from 'react'
 import theme from '@/theme'
 import './globals.css'
@@ -13,7 +13,8 @@ const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
     title: 'МСК-Групп',
-    description: 'Платная госпитализация в федеральные лечебные учреждения Москвы. Платная госпитализация без полиса ОМС'
+    description: 'Платная госпитализация в федеральные лечебные учреждения Москвы',
+    keywords: 'платная госпитализация в федеральные и ведомственные медицинские учреждения Москвы, скорая помощь, экстренная госпитализация'
 }
 
 export default function RootLayout({children}) {
