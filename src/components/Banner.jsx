@@ -4,6 +4,7 @@ import {Box, Button, Typography} from '@mui/material'
 import {phoneNumber} from '@/config'
 import {useEffect, useState} from 'react'
 import {useRouter} from 'next/navigation'
+import SocialBlock from '@/components/SocialBlock'
 
 export const Banner = () => {
     const router = useRouter()
@@ -21,7 +22,13 @@ export const Banner = () => {
     }, [])
 
     return (
-        <Box component="figure" className="banner-container" sx={{position: 'relative'}}>
+        <Box
+            component="figure"
+            className="banner-container"
+            sx={{
+                position: 'relative',
+            }}
+        >
             <img className="banner" src="/images/images-for-landings/5.webp" alt="banner"/>
             <Box sx={{
                 position: 'absolute',
@@ -31,7 +38,7 @@ export const Banner = () => {
                 <Typography
                     variant="h4"
                     sx={{
-                        fontSize: {xs: 23, sm: 45, md: 62},
+                        fontSize: {xs: 22, sm: 40, md: 62},
                         lineHeight: 1.1,
                         fontWeight: 600,
                         color: 'var(--black)',
@@ -45,24 +52,32 @@ export const Banner = () => {
                 </Typography>
 
                 {isMobile
-                    ? <Button
-                        onClick={() => router.push(`tel:${phoneNumber}`)}
-                        variant="contained"
-                        color="error"
-                        size="large"
+                    ? (<Box
                         sx={{
-                            display: isMobile ? 'block' : 'none'
+                            display: 'inline'
                         }}
                     >
-                        Позвонить
-                    </Button>
-                    : <Typography sx={{
-                        color: 'var(--red)',
-                        display: isMobile ? 'none' : 'block',
-                        fontSize: {xs: 16, sm: 32, md: 62},
-                        fontWeight: 600,
-                        textShadow: '0px 4px 4px lightgray',
-                    }}>{phoneNumber}</Typography>
+                        <Button
+                            onClick={() => router.push(`tel:${phoneNumber}`)}
+                            variant="contained"
+                            color="error"
+                            size="large"
+                            sx={{
+                                display: isMobile ? 'block' : 'none'
+                            }}
+                        >
+                            Позвонить
+                        </Button>
+                        <SocialBlock className='banner-social-mobile'/>
+                    </Box>)
+                    : <Typography
+                        sx={{
+                            color: 'var(--red)',
+                            display: isMobile ? 'none' : 'block',
+                            fontSize: {xs: 16, sm: 32, md: 62},
+                            fontWeight: 600,
+                            textShadow: '0px 4px 4px lightgray',
+                        }}>{phoneNumber}</Typography>
                 }
             </Box>
         </Box>
