@@ -14,7 +14,7 @@ export const BaseAccordion = ({id = '', title, items = []}) => {
                 color: 'var(--black)'
             }}
         >
-            <Typography variant="h4" sx={{
+            <Typography variant="h2" sx={{
                 marginBottom: '20px',
                 fontSize: {xs: '28px', sm: '34px'},
                 fontWeight: 500

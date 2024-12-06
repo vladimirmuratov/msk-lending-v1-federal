@@ -9,10 +9,10 @@ export const CoordinatorBlock = () => (
         }}
     >
         <Typography
-            variant="h4"
+            variant="h2"
             sx={{
                 marginBottom: '20px',
-                fontSize: {xs: '28px', sm: '34px'},
+                fontSize: {xs: '24px', sm: '34px'},
                 fontWeight: 500,
                 textAlign: 'center',
                 color: 'var(--main-color)'
@@ -25,7 +25,7 @@ export const CoordinatorBlock = () => (
         <Typography
             component="p"
             sx={{
-                fontSize: 20,
+                fontSize: { xs: 18, sm: 20 },
                 fontWeight: 500,
                 textAlign: 'center'
             }}
