@@ -13,14 +13,14 @@ export const WeRespondBlock = () => {
             }}
         >
 
-            <Typography variant="h2" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>
+            <Typography variant="h2" sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>
                 Мы отвечаем за:
             </Typography>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{fontWeight: 600}}>Организация госпитализации:</Box>
+                    <Box component='span' sx={{ color: 'var(--main-color)',fontWeight: 600}}>Организация госпитализации:</Box>
                     <br/>
                     — Быстрое оформление пациента в стационар
                     <br/>
@@ -33,7 +33,7 @@ export const WeRespondBlock = () => {
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{fontWeight: 600}}>Медицинская транспортировка:</Box>
+                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Медицинская транспортировка:</Box>
                     <br/>
                     — Предоставление санитарного транспорта, оснащённого необходимым оборудованием
                     <br/>
@@ -44,7 +44,7 @@ export const WeRespondBlock = () => {
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{fontWeight: 600}}>Оценка состояния здоровья:</Box>
+                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Оценка состояния здоровья:</Box>
                     <br/>
                     — Первичный осмотр и диагностика состояния пациента
                     <br/>
@@ -55,7 +55,7 @@ export const WeRespondBlock = () => {
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{fontWeight: 600}}>Координация с медучреждением:</Box>
+                    <Box component='span' sx={{ color: 'var(--main-color)',fontWeight: 600}}>Координация с медучреждением:</Box>
                     <br/>
                     — Предварительная договорённость о приёме пациента
                     <br/>
@@ -66,7 +66,7 @@ export const WeRespondBlock = () => {
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{fontWeight: 600}}>Поддержка семьи:</Box>
+                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Поддержка семьи:</Box>
                     <br/>
                     — Информирование родственников о ходе госпитализации
                     <br/>
@@ -77,7 +77,7 @@ export const WeRespondBlock = () => {
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
                 <CheckIcon sx={{color: 'var(--main-color)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{fontWeight: 600}}>Дополнительные услуги:</Box>
+                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Дополнительные услуги:</Box>
                     <br/>
                     — Обеспечение комфорта пациента: улучшенные палаты, услуги сиделки, и т.д.
                     <br/>

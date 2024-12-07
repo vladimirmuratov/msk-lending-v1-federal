@@ -14,19 +14,19 @@ export const MainInfoBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
+                        sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
                 Приоритетное медицинское обслуживание: качество и комфорт в федеральных и ведомственных клиниках
             </Typography>
 
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '20px' }}>
-                Добро пожаловать в <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box> – ваш ключ к
+                Добро пожаловать в <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box> – ваш ключ к
                 премиальной заботе о здоровье! Здесь не только столичные
                 жители, но пациенты из всех уголков России и стран СНГ получают исключительные возможности. Мы
                 гарантируем безупречность условий госпитализации: удобство и безопасность в каждом шаге.
             </Typography>
 
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '20px' }}>
-                <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп:</Box>
+                <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп:</Box>
                 <br />
                 – Организация транспортировки из регионов и стран СНГ прямо в нужное медицинское учреждение.
                 – Встреча с иногородними пациентами на вокзалах или в аэропорту, включая сопровождение
@@ -47,10 +47,10 @@ export const MainInfoBlock = () => {
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '20px' }}>
                 Мы обеспечиваем не только медицинскую поддержку высочайшего класса, но и индивидуальный подход к каждому
                 пациенту. Ваше пребывание в клинике будет комфортным, а забота о здоровье – профессиональной и надежной.
-                В "МСК-Групп" вы получаете уверенность в лучшем лечении!
+                В <Box component="span" sx={{ fontWeight: 600,  color: 'var(--main-color)', }}>МСК-Групп</Box> вы получаете уверенность в лучшем лечении!
                 <br />
                 <br />
-                <Box component="span" sx={{ fontWeight: 600 }}>Непрерывно. Быстро реагируем. Доступность без
+                <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>Непрерывно. Быстро реагируем. Доступность без
                     границ</Box>
             </Typography>
 
@@ -58,7 +58,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Коллектив экспертов высшего класса
                     </Typography>
                 </Box>
@@ -71,7 +71,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Передовые технологии
                     </Typography>
                 </Box>
@@ -84,7 +84,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Персонализированное лечение
                     </Typography>
                 </Box>
@@ -97,7 +97,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Палаты для комфорта
                     </Typography>
                 </Box>
@@ -110,7 +110,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Круговая забота о пациенте
                     </Typography>
                 </Box>
@@ -123,7 +123,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Организация госпитализации без хлопот
                     </Typography>
                 </Box>
@@ -136,7 +136,7 @@ export const MainInfoBlock = () => {
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
+                    <Typography component="p" sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
                         Финансовая ясность
                     </Typography>
                 </Box>
@@ -146,7 +146,7 @@ export const MainInfoBlock = () => {
             </Box>
 
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                Выбирая <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box>, вы выбираете непрерывную заботу
+                Выбирая <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box>, вы выбираете непрерывную заботу
                 о своем здоровье и долголетии. Мы – ваш надежный
                 спутник в пути к полноценной жизни, где бы вы ни находились.
             </Typography>

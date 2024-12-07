@@ -14,8 +14,9 @@ export const AboutBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '28px', sm: '34px' }, fontWeight: 500 }}>О
-                нас</Typography>
+                        sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '28px', sm: '34px' }, fontWeight: 500 }}>
+                О нас
+            </Typography>
 
             <Typography
                 component="p"
@@ -24,12 +25,12 @@ export const AboutBlock = () => {
                     // marginBottom: '10px'
                 }}
             >
-                Московская Сервисная Компания (<Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box>)
+                Московская Сервисная Компания (<Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box>)
                 предоставляет услуги ведущих клиник федерального уровня и
                 подведомственных учреждений Москвы и Московской области. При медицинских показаниях гарантируем
                 оперативное решение о платном размещении больных с разнообразными диагнозами по доступным тарифам.
                 <br />
-                Обратившись в <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box>, вы можете быть уверены:
+                Обратившись в <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box>, вы можете быть уверены:
                 необходимая поддержка прибудет без задержек и ваше
                 здоровье будет под надежной защитой.
             </Typography>

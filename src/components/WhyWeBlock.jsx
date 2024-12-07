@@ -14,9 +14,9 @@ export const WhyWeBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '28px', sm: '34px' }, fontWeight: 500 }}>Почему
-                именно
-                мы?</Typography>
+                        sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '28px', sm: '34px' }, fontWeight: 500 }}>
+                Почему именно мы?
+            </Typography>
 
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
                 Наша компания специализируется на оказании содействия при размещении в медицинских учреждениях Москвы и
