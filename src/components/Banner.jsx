@@ -26,7 +26,8 @@ export const Banner = () => {
             component="figure"
             sx={{
                 position: 'relative',
-                marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
+                // marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
+                marginTop: isMobile ? {xs: '110px', sm: 0} : 0,
                 paddingBottom: isMobile ? { xs: '25px', sm: 0 } : 0
             }}
         >
@@ -44,7 +45,9 @@ export const Banner = () => {
                 }}
             >
                 <Box sx={{
-                    padding: '20px'
+                    position: 'absolute',
+                    top: {xs: '10%', sm: '10%'},
+                    left: '5%',
                 }}>
                     <Typography
                         variant="h1"
