@@ -26,8 +26,7 @@ export const Banner = () => {
             component="figure"
             sx={{
                 position: 'relative',
-                // marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
-                marginTop: isMobile ? { xs: '110px', sm: 0 } : 0,
+                marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
                 paddingBottom: isMobile ? { xs: '25px', sm: 0 } : 0
             }}
         >
@@ -35,10 +34,10 @@ export const Banner = () => {
                 sx={{
                     width: '100%',
                     height: {
-                        xs: 'calc(var(--index) * 19)',
-                        sm: 'calc(var(--index) * 26)',
-                        md: 'calc(var(--index) * 33)',
-                        lg: 'calc(var(--index) * 33)'
+                        xs: 'calc(var(--index) * 23)',
+                        sm: 'calc(var(--index) * 23)',
+                        md: 'calc(var(--index) * 23)',
+                        lg: 'calc(var(--index) * 20)'
                     },
                     backgroundImage: `url(/images/images-for-landings/3.webp)`,
                     backgroundSize: 'cover',
@@ -57,10 +56,11 @@ export const Banner = () => {
                             textShadow: '0px 4px 4px lightgray',
                             marginBottom: { xs: '5px', sm: '10px' }
                         }}>
-                        Платная госпитализация<br/>
-                        в федеральные<br/>
-                        и ведомственные<br/>
-                        мед.учреждения
+                        Платная
+                        <br/>
+                        госпитализация
+                        <br/>
+                        в Москве
                     </Typography>
 
                     {isMobile
