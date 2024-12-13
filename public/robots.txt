@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://federal.mskdoctor.ru/sitemap.xml
