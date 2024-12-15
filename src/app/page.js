@@ -24,6 +24,9 @@ export const metadata = {
     other: {
         ['yandex-verification']: '941b23527bd65116',
     },
+    alternates: {
+        canonical: 'https://msk-group-hospital.ru/'
+    }
 };
 
 export default function Home() {
