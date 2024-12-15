@@ -4,7 +4,7 @@ import {Montserrat} from 'next/font/google'
 import {Box} from '@mui/material'
 import {Footer} from '@/components/Footer'
 import {Navigation} from '@/components/navigation/Navigation'
-// import {Metrika} from '@/components/Metrika'
+import {Metrika} from '@/components/Metrika'
 import {Suspense} from 'react'
 import theme from '@/theme'
 import './globals.css'
@@ -12,10 +12,16 @@ import './globals.css'
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
-    title: 'МСК-Групп',
-    description: 'Платная госпитализация в федеральные лечебные учреждения Москвы',
-    keywords: 'платная госпитализация в федеральные и ведомственные медицинские учреждения Москвы, скорая помощь, экстренная госпитализация'
-}
+    title: 'Платная госпитализация. Звоните: +7 (499) 719-81-00, 24/7',
+    description: 'Платная госпитализация в Москве: выбирайте надежные федеральные и ведомственные медучреждения для получения медицинской помощи на высшем уровне.',
+    keywords: ['платная госпитализация', 'платная госпитализация в москве', 'госпитализация в стационар платно', 'центр платной госпитализации', 'платное лечение госпитализация', 'платная госпитализация пожилых', 'платная плановая госпитализация', 'платные клиники москва госпитализация'],
+    other: {
+        ['yandex-verification']: '941b23527bd65116',
+    },
+    alternates: {
+        canonical: 'https://federal.mskdoctor.ru/'
+    }
+};
 
 export default function RootLayout({children}) {
     return (
@@ -27,8 +33,8 @@ export default function RootLayout({children}) {
                     <Suspense>
                         <Navigation/>
                         {children}
-                        {/*<Metrika/>*/}
                         <Footer/>
+                        <Metrika/>
                     </Suspense>
                 </Box>
             </ThemeProvider>
