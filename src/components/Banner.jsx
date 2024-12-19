@@ -59,7 +59,7 @@ export const Banner = () => {
                             textShadow: '0px 4px 4px lightgray',
                             marginBottom: { xs: '5px', sm: '10px' }
                         }}>
-                        Платная
+                        платная
                         <br/>
                         госпитализация
                         <br/>
