@@ -14,74 +14,74 @@ export const WeRespondBlock = () => {
         >
 
             <Typography variant="h2" sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>
-                Мы отвечаем за:
+                Наши обязательства:
             </Typography>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--main-color)'}}/>
+                <CheckIcon sx={{color: 'var(--red)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{ color: 'var(--main-color)',fontWeight: 600}}>Организация госпитализации:</Box>
+                    <Box component='span' sx={{ color: 'var(--red)',fontWeight: 600}}>Организация госпитализации:</Box>
                     <br/>
-                    — Быстрое оформление пациента в стационар
+                    — Быстрая регистрация пациента в стационаре.
                     <br/>
-                    — Выбор медицинского учреждения, исходя из состояния пациента и специфики заболевания
+                    — Подбор клиники согласно состоянию и заболеванию.
                     <br/>
-                    — Сопровождение при транспортировке, включая медицинскую эвакуацию при необходимости
+                    — Транспортировка с медицинским сопровождением (включая эвакуацию).
                 </Typography>
             </Box>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--main-color)'}}/>
+                <CheckIcon sx={{color: 'var(--red)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Медицинская транспортировка:</Box>
+                    <Box component='span' sx={{ color: 'var(--red)', fontWeight: 600}}>Медицинская транспортировка:</Box>
                     <br/>
-                    — Предоставление санитарного транспорта, оснащённого необходимым оборудованием
+                    — Предоставление оснащенного санитарного транспорта.
                     <br/>
-                    — Сопровождение квалифицированной медицинской бригадой
+                    — Квалифицированная медицинская бригада сопровождения.
                 </Typography>
             </Box>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--main-color)'}}/>
+                <CheckIcon sx={{color: 'var(--red)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Оценка состояния здоровья:</Box>
+                    <Box component='span' sx={{ color: 'var(--red)', fontWeight: 600}}>Оценка состояния здоровья:</Box>
                     <br/>
-                    — Первичный осмотр и диагностика состояния пациента
+                    — Первичный осмотр и диагностика.
                     <br/>
-                    — Принятие решения о срочности и типе госпитализации (плановая, экстренная)
+                    — Определение срочности и типа госпитализации (плановая, экстренная).
                 </Typography>
             </Box>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--main-color)'}}/>
+                <CheckIcon sx={{color: 'var(--red)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{ color: 'var(--main-color)',fontWeight: 600}}>Координация с медучреждением:</Box>
+                    <Box component='span' sx={{ color: 'var(--red)',fontWeight: 600}}>Координация с медучреждением:</Box>
                     <br/>
-                    — Предварительная договорённость о приёме пациента
+                    — Договоренность о приеме пациента.
                     <br/>
-                    — Подготовка необходимых документов
+                    — Подготовка необходимой документации.
                 </Typography>
             </Box>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--main-color)'}}/>
+                <CheckIcon sx={{color: 'var(--red)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Поддержка семьи:</Box>
+                    <Box component='span' sx={{ color: 'var(--red)', fontWeight: 600}}>Поддержка семьи:</Box>
                     <br/>
-                    — Информирование родственников о ходе госпитализации
+                    — Информационная поддержка родственников.
                     <br/>
-                    — Предоставление услуг консультации и юридической поддержки (если требуется)
+                    — Консультации и юридическая помощь (при необходимости).
                 </Typography>
             </Box>
 
             <Box sx={{display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px'}}>
-                <CheckIcon sx={{color: 'var(--main-color)'}}/>
+                <CheckIcon sx={{color: 'var(--red)'}}/>
                 <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, fontWeight: 500}}>
-                    <Box component='span' sx={{ color: 'var(--main-color)', fontWeight: 600}}>Дополнительные услуги:</Box>
+                    <Box component='span' sx={{ color: 'var(--red)', fontWeight: 600}}>Дополнительные услуги:</Box>
                     <br/>
-                    — Обеспечение комфорта пациента: улучшенные палаты, услуги сиделки, и т.д.
+                    — Комфортные условия пребывания: улучшенные палаты, услуги сиделки.
                     <br/>
-                    — Медицинское сопровождение после выписки (амбулаторное лечение, реабилитация)
+                    — Постгоспитальное сопровождение: амбулаторное лечение, реабилитация.
                 </Typography>
             </Box>
 

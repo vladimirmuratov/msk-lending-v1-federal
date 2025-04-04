@@ -1,25 +1,25 @@
-'use client'
+'use client';
 
-import {Box, Button, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
-import {useEffect, useState} from 'react'
-import {useRouter} from 'next/navigation'
-import SocialBlock from '@/components/SocialBlock'
+import { Box, Button, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import SocialBlock from '@/components/SocialBlock';
 
 export const Banner = () => {
-    const router = useRouter()
-    const [isMobile, setMobile] = useState(true)
+    const router = useRouter();
+    const [isMobile, setMobile] = useState(true);
 
     useEffect(() => {
-        const os = navigator.userAgentData.platform
+        const os = navigator.userAgentData.platform;
 
         if (os === 'Android' || os === 'iOS') {
-            setMobile(true)
+            setMobile(true);
         } else {
-            setMobile(false)
+            setMobile(false);
         }
 
-    }, [])
+    }, []);
 
     return (
         <Box
@@ -27,7 +27,7 @@ export const Banner = () => {
             sx={{
                 position: 'relative',
                 // marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
-                marginTop: isMobile ? {xs: '110px', sm: 0} : 0,
+                marginTop: isMobile ? { xs: '110px', sm: 0 } : 0,
                 paddingBottom: isMobile ? { xs: '25px', sm: 0 } : 0
             }}
         >
@@ -47,25 +47,24 @@ export const Banner = () => {
             >
                 <Box sx={{
                     position: 'absolute',
-                    top: {xs: '10%', sm: '10%'},
+                    // top: { xs: '10%', sm: '10%' },
+                    top: '50%',
+                    transform: 'translateY(-50%)',
                     left: '5%',
                 }}>
                     <Typography
                         variant="h1"
                         sx={{
-                            fontSize: { xs: 24, sm: 40, md: 60 },
-                            lineHeight: 1,
+                            fontSize: { xs: 22, sm: 40, md: 60 },
                             fontWeight: 600,
                             color: 'var(--main-color)',
                             textShadow: '2px 2px 2px white',
                             marginBottom: { xs: '5px', sm: '10px' },
                             textTransform: 'uppercase'
                         }}>
-                        платная
-                        <br/>
                         госпитализация
-                        <br/>
-                        в Москве
+                        <br />
+                        в федеральный центр
                     </Typography>
 
                     {isMobile
@@ -75,6 +74,7 @@ export const Banner = () => {
                             }}
                         >
                             <Button
+                                className="animation-btn"
                                 onClick={() => router.push(`tel:${phoneNumber}`)}
                                 variant="contained"
                                 color="error"
@@ -85,13 +85,13 @@ export const Banner = () => {
                             >
                                 Позвонить
                             </Button>
-                            <SocialBlock className="banner-social-mobile"/>
+                            <SocialBlock className="banner-social-mobile" />
                         </Box>)
                         : <Typography
                             sx={{
                                 color: 'var(--red)',
                                 display: isMobile ? 'none' : 'block',
-                                fontSize: {xs: 16, sm: 32, md: 62},
+                                fontSize: { xs: 16, sm: 32, md: 62 },
                                 fontWeight: 600,
                                 textShadow: '0px 4px 4px lightgray',
                             }}>{phoneNumber}</Typography>
@@ -99,5 +99,5 @@ export const Banner = () => {
                 </Box>
             </Box>
         </Box>
-    )
-}
+    );
+};

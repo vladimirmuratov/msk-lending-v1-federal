@@ -12,17 +12,25 @@ import './globals.css'
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
-    title: 'Госпитализация в больницы Москвы',
+    title: 'Медицинская Сервисная Компания. Госпитализация в федеральный центр. 8 (499) 719-81-00, 24/7',
     description: 'Официальный координатор по госпитализации в федеральные и ведомственные больницы Москвы. Оперативно. Минимум документов. Финансовая прозрачность',
     keywords: ['платная госпитализация', 'платная госпитализация в москве', 'госпитализация в стационар платно', 'центр платной госпитализации', 'платное лечение госпитализация', 'платная госпитализация пожилых', 'платная плановая госпитализация', 'платные клиники москва госпитализация'],
     other: {
         ['yandex-verification']: '941b23527bd65116',
+    },
+    openGraph: {
+        title: 'Медицинская Сервисная Компания. Госпитализация в федеральный центр. 8 (499) 719-81-00, 24/7',
+        description: 'Официальный координатор по госпитализации в московские клиники. Оперативно. 10 лет опыта. Минимум документов. Финансовая прозрачность',
+        images: ['/images/banner2.webp'],
+        url: 'https://region.mskdoctor.ru/',
+        type: 'website',
+        locale: 'ru_RU',
     }
 };
 
 export default function RootLayout({children}) {
     return (
-        <html lang="en">
+        <html lang="en" prefix="og: https://ogp.me/ns#">
         <body className={montserrat.className}>
         <AppRouterCacheProvider>
             <ThemeProvider theme={theme}>
