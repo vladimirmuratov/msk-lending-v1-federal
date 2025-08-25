@@ -2,11 +2,11 @@
 
 import { Box, Button, Typography } from '@mui/material';
 import { phoneNumber } from '@/config';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import SocialBlock from '@/components/SocialBlock';
+// import SocialBlock from '@/components/SocialBlock';
 
-export const Banner = () => {
+export const Banner = React.memo(() => {
     const router = useRouter();
     const [isMobile, setMobile] = useState(true);
 
@@ -49,22 +49,20 @@ export const Banner = () => {
                     position: 'absolute',
                     // top: { xs: '10%', sm: '10%' },
                     top: '50%',
-                    transform: 'translateY(-50%)',
+                    transform: {xs: 'translateY(-60%)', sm: 'translateY(-50%)'},
                     left: '5%',
                 }}>
                     <Typography
                         variant="h1"
                         sx={{
-                            fontSize: { xs: 22, sm: 40, md: 60 },
+                            fontSize: { xs: 22, sm: 40, md: 50 },
                             fontWeight: 600,
                             color: 'var(--main-color)',
                             textShadow: '2px 2px 2px white',
-                            marginBottom: { xs: '5px', sm: '10px' },
+                            marginBottom: { xs: '10px', sm: '10px' },
                             textTransform: 'uppercase'
                         }}>
-                        госпитализация
-                        <br />
-                        в федеральный центр
+                        Госпитализация в федеральные и ведомственные медицинские центры
                     </Typography>
 
                     {isMobile
@@ -85,7 +83,7 @@ export const Banner = () => {
                             >
                                 Позвонить
                             </Button>
-                            <SocialBlock className="banner-social-mobile" />
+                            {/*<SocialBlock className="banner-social-mobile" />*/}
                         </Box>)
                         : <Typography
                             sx={{
@@ -100,4 +98,4 @@ export const Banner = () => {
             </Box>
         </Box>
     );
-};
+});
